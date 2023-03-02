@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.ANZ.TESTpackage.TC03_VerifyWorkOutHowMuchCouldBorrow">
+      <class name="Com.ANZ.TESTpackage.TC01_VerifyBorrowingEstimateAmount">
         <methods>
           <include name="teardown"/>
-          <include name="VerifyWorkOutHowMuchCouldBorrow"/>
+          <include name="VerifyBorrowingEstimateAmount"/>
           <include name="Setup"/>
         </methods>
-      </class> <!-- Com.ANZ.TESTpackage.TC03_VerifyWorkOutHowMuchCouldBorrow -->
+      </class> <!-- Com.ANZ.TESTpackage.TC01_VerifyBorrowingEstimateAmount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
