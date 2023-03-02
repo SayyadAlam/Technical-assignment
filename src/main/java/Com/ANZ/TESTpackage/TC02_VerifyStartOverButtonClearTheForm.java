@@ -1,5 +1,6 @@
 package Com.ANZ.TESTpackage;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Com.ANZ.POMpackage.CalculatorAndToolPOMclass;
@@ -24,7 +25,7 @@ public class TC02_VerifyStartOverButtonClearTheForm extends TestBaseClass
         cl.TotalCreditCardLimit();
         cl.WorkOutButton();
         
-       Thread.sleep(3000);
+      
         
         cl.ClickOnStartOver();
         
@@ -33,7 +34,7 @@ public class TC02_VerifyStartOverButtonClearTheForm extends TestBaseClass
         
         String Exp = "0";
         
-        
+        Assert.assertEquals(Actual, Exp);
         
         
 	}

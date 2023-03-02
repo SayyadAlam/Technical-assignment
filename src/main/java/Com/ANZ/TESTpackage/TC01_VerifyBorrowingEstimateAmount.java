@@ -9,7 +9,7 @@ public class TC01_VerifyBorrowingEstimateAmount extends TestBaseClass
 
 {
     @Test 
-	public void VerifyBorrowingEstimateAmount() throws InterruptedException 
+	public void VerifyBorrowingEstimateAmount()  
 	{
     	CalculatorAndToolPOMclass cl = new CalculatorAndToolPOMclass(driver);
     	
@@ -25,7 +25,7 @@ public class TC01_VerifyBorrowingEstimateAmount extends TestBaseClass
              cl.TotalCreditCardLimit();
              cl.WorkOutButton();
              
-               Thread.sleep(3000);
+               
              String Actual = cl.YourEstimateCouldBorrow();
              System.out.println(Actual);
              
