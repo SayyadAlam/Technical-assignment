@@ -11,8 +11,8 @@ public class CalculatorAndToolPOMclass
 
 	private WebDriver driver;
 	private Select s;
-	
-	@FindBy(xpath="//input[@id=\"application_type_single\"]")
+	 
+	@FindBy(xpath="(//label[@class='btn'])[1]")
 	WebElement Single;
 	
 	public void ApplicationTypeSingle()
@@ -21,7 +21,7 @@ public class CalculatorAndToolPOMclass
 	}
 	
 
-	@FindBy(xpath="//select[@title=\"Number of dependants\"]")
+	@FindBy(xpath="//select[@title='Number of dependants']")
 	WebElement Dependants;
 	
 	public void NumberOfDependants()
@@ -33,7 +33,7 @@ public class CalculatorAndToolPOMclass
 	}
 	
 	
-	@FindBy(xpath="(//label[@class=\"btn\"])[3]")
+	@FindBy(xpath="(//label[@class='btn'])[3]")
 	WebElement HomeToLiveIn;
 	
 	public void PropertyTypeHomeToLiveIn()
@@ -42,7 +42,7 @@ public class CalculatorAndToolPOMclass
 	}
 	
 	
-			@FindBy(xpath="//input[@aria-describedby=\"q2q1i1 q2q1i2\"]")
+			@FindBy(xpath="//input[@aria-describedby='q2q1i1 q2q1i2']")
 			WebElement AnnualIncome;
 			
 			public void YourAnnualIncome()
@@ -51,7 +51,7 @@ public class CalculatorAndToolPOMclass
 			}
 	
 			
-			@FindBy(xpath="//input[@aria-describedby=\"q2q2i1 q2q2i2\"]")
+			@FindBy(xpath="//input[@aria-describedby='q2q2i1 q2q2i2']")
 			WebElement AnnualOtherIncome;
 			
 			public void YourAnnualOtherIncome()
@@ -60,7 +60,7 @@ public class CalculatorAndToolPOMclass
 			}
 	
 			
-			@FindBy(xpath="//input[@id=\"expenses\"]")
+			@FindBy(xpath="//input[@id='expenses']")
 			WebElement LivingExpences;
 			
 			public void YourLivingExpences()
@@ -70,7 +70,7 @@ public class CalculatorAndToolPOMclass
 			
 			
 			
-			@FindBy(xpath="//input[@id=\"homeloans\"]")
+			@FindBy(xpath="//input[@id='homeloans']")
 			WebElement HomeLoanRepayment;
 			
 			public void CurrentHomeloanMonthlyRepaymentsTooltip()
@@ -79,7 +79,7 @@ public class CalculatorAndToolPOMclass
 			}
 			
 			
-			@FindBy(xpath="//input[@id=\"otherloans\"]")
+			@FindBy(xpath="//input[@id='otherloans']")
 			WebElement OthreLoanRepayment;
 			
 			public void OtherLoanMonthlyPayments()
@@ -88,7 +88,7 @@ public class CalculatorAndToolPOMclass
 			}
 			
 			
-			@FindBy(xpath="//input[@aria-describedby=\"q3q4i1 q3q4i2\"]")
+			@FindBy(xpath="//input[@aria-describedby='q3q4i1 q3q4i2']")
 			WebElement OtherCommitments;
 			
 			public void OtherMonthlyCommitments()
@@ -97,7 +97,7 @@ public class CalculatorAndToolPOMclass
 			}
 			
 			
-			@FindBy(xpath="//input[@id=\"credit\"]")
+			@FindBy(xpath="//input[@id='credit']")
 			WebElement CreditCardLimit;
 			
 			public void TotalCreditCardLimit()
@@ -106,7 +106,7 @@ public class CalculatorAndToolPOMclass
 			}
 			
 			
-			@FindBy(xpath="//button[@id=\"btnBorrowCalculater\"]")
+			@FindBy(xpath="//button[@id='btnBorrowCalculater']")
 			WebElement WorkOutButton;
 			
 			public void WorkOutButton()
@@ -116,7 +116,7 @@ public class CalculatorAndToolPOMclass
 			
 			
 			
-			@FindBy(xpath="//span[@id=\"borrowResultTextAmount\"]")
+			@FindBy(xpath="//span[@id='borrowResultTextAmount']")
 			WebElement EstimateCouldBorrow;
 			
 			public String YourEstimateCouldBorrow()
@@ -128,7 +128,7 @@ public class CalculatorAndToolPOMclass
 			
 			
 			// StartOver
-				@FindBy(xpath="(//button[@class=\"start-over\"])[1]")
+				@FindBy(xpath="(//button[@class='start-over'])[1]")
 				WebElement StartOver;
 					
 				public void ClickOnStartOver()
@@ -139,7 +139,7 @@ public class CalculatorAndToolPOMclass
 			
 		//Entering Only $1 for Living Expenses
 				
-		@FindBy(xpath="//input[@id=\"expenses\"]")
+		@FindBy(xpath="//input[@id='expenses']")
 	    WebElement LivingExpenses;
 				
 		 public void LivingExpenses1$()
@@ -149,7 +149,7 @@ public class CalculatorAndToolPOMclass
 				
 		//Return the message 
 		 
-		 @FindBy(xpath="//div[@class=\"borrow__error__text\"]")
+		 @FindBy(xpath="//div[@class='borrow__error__text']")
 			WebElement ReturnMessage;
 			
 			public String ReturnMessage()

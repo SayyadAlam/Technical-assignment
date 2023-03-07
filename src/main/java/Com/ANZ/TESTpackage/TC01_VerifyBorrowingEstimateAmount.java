@@ -18,7 +18,7 @@ public class TC01_VerifyBorrowingEstimateAmount extends TestBaseClass
              cl.PropertyTypeHomeToLiveIn();
              cl.YourAnnualIncome();
              cl.YourAnnualOtherIncome();
-             cl.YourLivingExpences(); 
+             cl.YourLivingExpences();   
              cl.CurrentHomeloanMonthlyRepaymentsTooltip();
              cl.OtherLoanMonthlyPayments();
              cl.OtherMonthlyCommitments();
